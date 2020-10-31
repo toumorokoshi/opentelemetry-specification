@@ -33,3 +33,11 @@ groups:
           - net.peer.ip
           - net.peer.name
         - include: network
+    - id: grpc
+      prefix: rpc.grpc
+      extends: rpc
+      attributes:
+        - id: status_code
+          type: number
+          required: always
+          brief: "the status code number of the gRPC request."
